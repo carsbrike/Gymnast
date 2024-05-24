@@ -579,7 +579,7 @@ body .benefits .ben-conteiner .ben-box .b-box-txt p {
   margin-top: 5px;
 }
 body .newsletter {
-  background: rgba(0, 0, 0, 0.65) url('bg.jpg');
+  background: rgba(0, 0, 0, 0.65) url('../img/bg.jpg') !important;
   background-size: cover;
   min-height: 340px;
   background-position: 50% 0%;
