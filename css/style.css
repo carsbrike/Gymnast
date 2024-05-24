@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body .header {
+  position: relative;
+  width: 100%;
+}
+body .header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 60px;
+  background-color: black;
+}
+body .header .container .logo a {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+body .header .container .hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 50px;
+  cursor: pointer;
+  border: 2px solid rgb(36, 35, 35);
+  border-radius: 5px 5px;
+  transition: 0.3s ease-in-out;
+  padding: 4px 0;
+}
+body .header .container .hamburger-menu .line {
+  width: 30px;
+  height: 3px;
+  background-color: rgb(59, 59, 59);
+  border-radius: 10px;
+  margin: 4px 0;
+}
+body .header .container .hamburger-menu.active {
+  border: 2px solid rgb(173, 173, 173);
+  border-radius: 5px 5px;
+  transition: 0.3s ease-in-out;
+}
+body .header .menu {
+  display: block;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+body .header .menu .menu-ul {
+  height: 200px;
+  list-style: none;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+  background-color: blue;
+}
+body .header .menu .menu-ul li {
+  margin: 10px 0;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: white;
+}
+body .header .menu .menu-ul li a {
+  text-decoration: none;
+  color: white;
+}
+body .header .menu .menu-ul .korek {
+  display: none;
+  background-color: greenyellow;
+}
+body .header .menu .menu-ul .korek.open {
+  display: block;
+}
+body .header .menu .menu-ul .essa {
+  cursor: pointer;
+}
+body .content {
+  background-color: red;
+  height: 100px;
+  width: 100%;
+  transition: margin-top 0.3s ease-in-out;
+  z-index: 22;
+  position: fixed;
+}
+body .content.active {
+  margin-top: 200px;
+}
+body .content.open {
+  margin-top: 250px;
+}/*# sourceMappingURL=style.css.map */
