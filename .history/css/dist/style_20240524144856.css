@@ -584,6 +584,7 @@ body .newsletter {
   min-height: 340px;
   background-position: 50% 0%;
   background-blend-mode: darken;
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
